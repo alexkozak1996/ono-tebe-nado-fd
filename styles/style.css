@@ -12,7 +12,7 @@
 .header {
   width: 1000px;
   margin: 0 auto;
-  padding-top: 92px;
+  padding-top: 90px;
   padding-bottom: 96px;
   display: grid;
   color: black;
@@ -35,26 +35,16 @@
   text-decoration: none;
 }
 
+.header__links-list-item-active{
+  list-style: none;
+}
+
 .header__link {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
   text-underline-offset: 3px;
-}
-
-.header__link-before{
-  position: relative;
-}
-
-.header__link-before::before{
-  content: '';
-  position: absolute;
-  padding: 2px 2px;
-  border: 1px solid #000;
-  border-radius: 100%;
-  top: 9px;
-  left: -20px;
 }
 
 .header__logo {
@@ -114,16 +104,16 @@
 
 .aligned-text_center {
   margin-top: 20px;
-  margin-left: 330px;
+  text-align: center;
 }
 
 .aligned-text_right {
   margin-top: 20px;
-  margin-left: 615px;
+  text-align: right;
 }
 
 .cover__discription {
-  padding-top: 106px;
+  padding-top: 105px;
   width: 1000px;
   align-items: center;
   margin: 0 auto;
@@ -177,35 +167,36 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .lots__card-list-item {
+  margin-bottom: 30px;
   position: relative;
   z-index: 1;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
+.card-link{
+  text-decoration: none;
+}
 .card {
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -230,7 +221,6 @@
 }
 
 .lots__look-more-link {
-  padding-top: 30px;
   padding-left: 40px;
   font-size: 20px;
   font-weight: 400;
@@ -245,17 +235,16 @@
   grid-template-columns: 1fr 2fr;
 }
 .about__logo {
-  position: relative;
   margin-left: 70px;
   width: 240px;
   height: 240px;
   background: #000;
-  border-radius: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about__logo-image {
-  position: absolute;
-  top: 58px;
-  left: 48px;
   width: 147px;
   height: 125px;
 }
@@ -270,17 +259,14 @@
   text-transform: uppercase;
 }
 .about__text {
+  margin-top: 100px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.about__text-first{
-  margin-top: 100px;
-}
-
-.about__text-second{
-  margin-top: 24px;
+.about__text p{
+  margin-bottom: 24px;
 }
 
 /* Стилизация подвала сайта */
@@ -302,6 +288,10 @@
   margin-left: -7px;
 }
 
+.footer__menu-list-item{
+  list-style: none;
+}
+
 .footer__menu-link {
   font-size: 18px;
   font-weight: 400;
@@ -317,11 +307,13 @@
   margin-left: 95px;
 }
 
+.footer__social-list-item{
+  list-style: none;
+}
+
 .footer__social-link {
   width: 48px;
   height: 48px;
-  border: 1px solid #000;
-  border-radius: 100%;
 }
 
 
