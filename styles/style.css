@@ -35,7 +35,7 @@
   text-decoration: none;
 }
 
-.header__links-list-item-active{
+.header__links-list-item_no-bullit{
   list-style: none;
 }
 
@@ -177,6 +177,7 @@
   z-index: 1;
   background-position: center;
   background-size: cover;
+  list-style: none;
 }
 
 .card_type_film {
@@ -272,7 +273,7 @@
 /* Стилизация подвала сайта */
 .footer {
   margin: 0 auto;
-  margin-top: 180px;
+  margin-top: 157px;
   padding-bottom: 82px;
   width: 1000px;
   display: grid;
